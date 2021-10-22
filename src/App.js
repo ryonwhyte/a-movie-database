@@ -9,16 +9,10 @@ import {GlobalStyle} from './GlobalStyle';
 
 function App() {
 
-  const test = () => {
-    <p>This function is my test function</p>
-  }
-
   return (
     <div className="App">
       <Header />
       <Home />
-      <div>{test()}</div>
-      <button id="test">Test</button>
       <GlobalStyle />
     </div>
   );
