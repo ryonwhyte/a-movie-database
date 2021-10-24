@@ -13,13 +13,4 @@ const Header = () => (
     </Wrapper>
 )
 
-/*
-const Home = () => (
-    <Wrapper>
-        <Content>
-            Test
-        </Content>
-    </Wrapper>
-)
-*/
 export default Header;

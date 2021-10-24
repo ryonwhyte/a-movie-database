@@ -4,17 +4,17 @@ export const GlobalStyle = createGlobalStyle`
     :root{
         --maxWidth: 1280px;
         --white: #fff;
-        ---lightGrey: #333;
-        --medGrey: 353535;
+        --lightGrey: #333;
+        --medGrey: #353535;
         --darkGrey: #1c1c1c;
         --fontSuperBig: 2.5rem;
         --fontBig: 1.5rem;
         --fontMed: 1.2rem;
-        --font-Small: 1rem;
+        --fontSmall: 1rem;
     }
     *{
         box-sizing: border-box;
-        font-family: 'Abel' sans-serif;
+        font-family: 'Abel', sans-serif;
     }
     body{
         margin:0;
