@@ -20,8 +20,9 @@ import No_Image from '../images/no_image.jpg';
 
 const Home = () => {
     //console.log(state);
-    const { state, loading, error, setSearchTerm, searchTerm } = useHomeFetch();
+    const { state, loading, error, setSearchTerm, searchTerm, setIsLoadingMore } = useHomeFetch();
     console.log(state);
+    if (error) return <div>Something Went Wrong...</div>
     return (
         <div>
             {!searchTerm && state.results[0] ? 
@@ -50,7 +51,7 @@ const Home = () => {
                 : null
             }
             { state.page < state.total_pages && !loading &&(
-                <Button text='Load More'/>
+                <Button text='Load More' callback={() => setIsLoadingMore(true)}/>
             )}
             
         </div>
